@@ -1,12 +1,13 @@
 {
   "latest": true,
-  "description": "Releases",
-  "version": "0.9.8-r16--4.7.0",
-  "flood_version": "4.7.0",
-  "rtorrent_version": "0.9.8-r16",
-  "upstream_image": "ghcr.io/hotio/base",
+  "description": "nightly",
+  "version": "4.6.3--7479881328",
+  "qbittorrent_version": "4.6.3",
+  "qbittorrent_full_version": "release-4.6.3_v2.0.9",
+  "flood_version": "7479881328",
   "upstream_tag": "alpinevpn",
-  "upstream_digest_amd64": "sha256:b7121a2987f647df44ad938ceae19499d83f0a7b966fd6c3b2bc9f86f8065cca",
-  "upstream_digest_arm64": "sha256:0168c2e9126931fda5b2b7702b215d9e0952bf1b90bab74cdec71d2a8c11b4b8",
-  "test_url": "http://localhost:3000"
+  "upstream_digest_amd64": "sha256:4dbbc95773ed73a5f2976356efbe35b20cb80fc858df219a204bee8d99b871e0",
+  "upstream_digest_arm64": "sha256:1c9bbf960775d50cc70c7b81f24f69747d3d6ddf47a761ecdb142dbb46401a7a",
+  "test_url": "http://localhost:3000",
+  "upstream_image": "ghcr.io/hotio/base"
 }

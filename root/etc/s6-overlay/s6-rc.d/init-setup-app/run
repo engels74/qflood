@@ -12,10 +12,9 @@ FLOOD_AUTH=${FLOOD_AUTH}
 ----------------------------------------------------------------------
 "
 
-if [[ ! -f "${CONFIG_DIR}/rtorrent.rc" ]]; then
-    echo "Installing default \"rtorrent.rc\"..."
-    cp "${APP_DIR}/rtorrent.rc" "${CONFIG_DIR}/rtorrent.rc"
-    chown hotio:hotio "${CONFIG_DIR}/rtorrent.rc"
+if [[ ! -f "${CONFIG_DIR}/config/qBittorrent.conf" ]]; then
+    echo "Installing default \"qBittorrent.conf\"..."
+    mkdir -p "${CONFIG_DIR}/config"
+    cp "${APP_DIR}/qBittorrent.conf" "${CONFIG_DIR}/config/qBittorrent.conf"
+    chown hotio:hotio -R "${CONFIG_DIR}/config"
 fi
-
-find "${CONFIG_DIR}" -name rtorrent.lock -type f -delete
