@@ -41,6 +41,7 @@ services:
     container_name: qflood
     image: ghcr.io/engels74/qflood:nightly
     ports:
+      - "8080:8080"
       - "3000:3000"
     environment:
       - PUID=1000
@@ -66,6 +67,7 @@ services:
     container_name: qflood
     image: ghcr.io/engels74/qflood:nightly
     ports:
+      - "8080:8080"
       - "3000:3000"
     environment:
       - PUID=1000
