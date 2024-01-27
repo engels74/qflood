@@ -6,8 +6,8 @@
   "qbittorrent_full_version": "release-4.6.3_v2.0.9",
   "flood_version": "7479881328",
   "upstream_tag": "alpinevpn",
-  "upstream_digest_amd64": "sha256:6e63c8c57d66eceaf6454b3a66cef5a3234d1f5ac192811f2c52eecf5847cf85",
-  "upstream_digest_arm64": "sha256:16f20ff6036c5c39de40f82c3d79e63f07d309667e31527f0df98fba6a2a12a0",
+  "upstream_digest_amd64": "sha256:4eea54d15d53bb59f2e3e0aae5dcc46aa3957f420ae83f787120e0821fd7b621",
+  "upstream_digest_arm64": "sha256:860688a0b8745b7ceaab41644e1054ff7713b4d89616a1d114628cd19a3459be",
   "test_url": "http://localhost:3000",
   "upstream_image": "ghcr.io/hotio/base"
 }
