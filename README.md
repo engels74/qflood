@@ -6,10 +6,12 @@ The qflood image currently only has "nightly support," which means it updates au
 
 This means that whenever the official flood repository receives a push commit, this docker image should automatically be updated. All thanks to hotio's brilliant setup.
 
+The included [qBittorrent](https://github.com/userdocs/qbittorrent-nox-static) uses libtorrent v2.x.
+
 
 ## Why only "nightly"?
 
-This docker image was created because, for whatever reason, jesec never seems to push an official release. And recent qBittorrent releases has [broken](https://github.com/jesec/flood/issues/629) hotio's old qflood image, which led him to deprecate the Docker image entirely.
+This docker image was created because, for whatever reason, jesec never seems to push an official release. And recent qBittorrent releases has [broken](https://github.com/jesec/flood/issues/629) hotio's old qflood image, which led him to [deprecate](https://discord.com/channels/610068305893523457/644100056244551680/1142642095950143598) the Docker image entirely.
 
 This fixes it, while also keeping the image updated. If a release of flood happens in the future, I might create an official `release` image as well. But for now, only the `nightly` image will be available.
 
@@ -57,7 +59,7 @@ services:
 
 ## Enabling Wireguard/VPN
 
-Check out hotio's guide [here](https://hotio.dev/containers/wireguard/) if the example doesn't make sense to you.
+Check out hotio's guide [here](https://hotio.dev/containers/rflood/) if the example doesn't make sense to you.
 
 ```yaml
 version: "3.9"
@@ -75,20 +77,15 @@ services:
       - UMASK=002
       - TZ=Etc/UTC
       - FLOOD_AUTH=false
-      - VPN_ENABLED=true
-      - VPN_PROVIDER=generic
-      - VPN_LAN_NETWORK=192.168.1.0/24
-      - VPN_CONF=wg0
-      - VPN_ADDITIONAL_PORTS
-      - VPN_AUTO_PORT_FORWARD=true
-      - VPN_PIA_USER
-      - VPN_PIA_PASS
-      - VPN_PIA_PREFERRED_REGION
+      - VPN_ENABLED=true 
+      - VPN_PROVIDER=generic 
+      - VPN_LAN_NETWORK=192.168.1.0/24 
+      - VPN_CONF=wg0 
+      - VPN_ADDITIONAL_PORTS 
+      - VPN_KEEP_LOCAL_DNS=false 
       - PRIVOXY_ENABLED=false
     cap_add:
       - NET_ADMIN
-    dns:
-      - 1.1.1.1
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
       - net.ipv6.conf.all.disable_ipv6=1
@@ -102,7 +99,7 @@ services:
 
 You can try to get support on the [Hotio discord](https://hotio.dev/discord), but you won't likely get support for this Docker image. 
 
-However, if you have problems configuring Wireguard, they may be able to assist you if you ask nicely:)
+However, if you have problems configuring Wireguard, they may be able to assist you if you ask nicely :)
 
 
 ## Donate
