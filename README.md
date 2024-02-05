@@ -15,7 +15,7 @@ This docker image was created because, for whatever reason, jesec never seems to
 
 This fixes it, while also keeping the image updated. If a release of flood happens in the future, I might create an official `release` image as well. But for now, only the `nightly` image will be available.
 
-All credits goes to Hotio :)!
+All credits goes to [hotio](https://github.com/hotio) :)!
 
 
 ## Image Overview
