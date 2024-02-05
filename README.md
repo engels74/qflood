@@ -15,7 +15,7 @@ This docker image was created because, for whatever reason, jesec never seems to
 
 This fixes it, while also keeping the image updated. If a release of flood happens in the future, I might create an official `release` image as well. But for now, only the `nightly` image will be available.
 
-All credits goes to Hotio :)!
+All credits goes to [hotio](https://github.com/hotio) :)!
 
 
 ## Image Overview
@@ -99,7 +99,7 @@ services:
 
 You can try to get support on the [Hotio discord](https://hotio.dev/discord), but you won't likely get support for this Docker image. 
 
-However, if you have problems configuring Wireguard, they may be able to assist you if you ask nicely :)
+However, if you have problems configuring Wireguard, they may be able to assist you if you ask nicely.
 
 
 ## Donate
