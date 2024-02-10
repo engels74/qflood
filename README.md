@@ -6,7 +6,7 @@ The qflood image currently only has "nightly support," which means it updates au
 
 This means that whenever the official flood repository receives a push commit, this docker image should automatically be updated. All thanks to hotio's brilliant setup.
 
-The included [qBittorrent](https://github.com/userdocs/qbittorrent-nox-static) uses libtorrent v2.x.
+The included [qBittorrent](https://github.com/userdocs/qbittorrent-nox-static) uses libtorrent v2.x..
 
 
 ## Why only "nightly"?
