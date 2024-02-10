@@ -25,10 +25,14 @@ There's only one Docker image to choose from: "[nightly](https://github.com/enge
 
 ## Using the images
 
-
-**Nightly** ([info](https://github.com/engels74/qflood/pkgs/container/qflood))
+**Nightly** (GHCR) ([info](https://github.com/engels74/qflood/pkgs/container/qflood))
 
 `docker pull ghcr.io/engels74/qflood:nightly`
+
+
+**Nightly** (DOCKERHUB) ([info](https://hub.docker.com/r/engels74/qflood/tags))
+
+`docker pull engels74/qflood:nightly`
 
 Alternatively, you can also use `latest` instead of nightly. It points to the same image.
 
