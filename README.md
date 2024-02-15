@@ -1,111 +1,15 @@
-# Qflood Nightly Docker Image
+# Documentation
 
-This is a fork of Hotio's rflood Docker image, that uses qBittorrent instead of rtorrent.
+All our documentation is located at [engels74.net](https://engels74.net/containers/qflood).
 
-The qflood image currently only has "nightly support," which means it updates automatically after a successful run of [this workflow file](https://github.com/jesec/flood/actions/workflows/publish-rolling.yml).
+# Support
 
-This means that whenever the official flood repository receives a push commit, this docker image should automatically be updated. All thanks to hotio's brilliant setup.
+If you need some assistance, please join the hotio [discord](https://hotio.dev/discord) server.
 
-The included [qBittorrent](https://github.com/userdocs/qbittorrent-nox-static) uses libtorrent v2.x..
+# Source
 
+The source is hosted at [GitHub](https://github.com/engels74/qflood/tree/nightly). If you can't find it in the `master` branch, it's probably located in another branch.
 
-## Why only "nightly"?
+# Show your support
 
-This docker image was created because, for whatever reason, jesec never seems to push an official release. And recent qBittorrent releases has [broken](https://github.com/jesec/flood/issues/629) hotio's old qflood image, which led him to [deprecate](https://discord.com/channels/610068305893523457/644100056244551680/1142642095950143598) the Docker image entirely.
-
-This fixes it, while also keeping the image updated. If a release of flood happens in the future, I might create an official `release` image as well. But for now, only the `nightly` image will be available.
-
-All credits goes to [hotio](https://github.com/hotio) :)!
-
-
-## Image Overview
-
-There's only one Docker image to choose from: "[nightly](https://github.com/engels74/qflood/tree/nightly)"
-
-
-## Using the images
-
-**Nightly** (GHCR) ([info](https://github.com/engels74/qflood/pkgs/container/qflood))
-
-`docker pull ghcr.io/engels74/qflood:nightly`
-
-
-**Nightly** (DOCKERHUB) ([info](https://hub.docker.com/r/engels74/qflood/tags))
-
-`docker pull engels74/qflood:nightly`
-
-Alternatively, you can also use `latest` instead of nightly. It points to the same image.
-
-
-## Docker Compose example
-
-```yaml
-version: "3.9"
-
-services:
-  qflood:
-    container_name: qflood
-    image: ghcr.io/engels74/qflood:nightly
-    ports:
-      - "8080:8080"
-      - "3000:3000"
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - UMASK=002
-      - TZ=Etc/UTC
-      - FLOOD_AUTH=false
-    volumes:
-      - /<host_folder_config>:/config
-      - /<host_folder_data>:/data
-    restart: unless-stopped
-```
-
-## Enabling Wireguard/VPN
-
-Check out hotio's guide [here](https://hotio.dev/containers/rflood/) if the example doesn't make sense to you.
-
-```yaml
-version: "3.9"
-
-services:
-  qflood:
-    container_name: qflood
-    image: ghcr.io/engels74/qflood:nightly
-    ports:
-      - "8080:8080"
-      - "3000:3000"
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - UMASK=002
-      - TZ=Etc/UTC
-      - FLOOD_AUTH=false
-      - VPN_ENABLED=true 
-      - VPN_PROVIDER=generic 
-      - VPN_LAN_NETWORK=192.168.1.0/24 
-      - VPN_CONF=wg0 
-      - VPN_ADDITIONAL_PORTS 
-      - VPN_KEEP_LOCAL_DNS=false 
-      - PRIVOXY_ENABLED=false
-    cap_add:
-      - NET_ADMIN
-    sysctls:
-      - net.ipv4.conf.all.src_valid_mark=1
-      - net.ipv6.conf.all.disable_ipv6=1
-    volumes:
-      - /<host_folder_config>:/config
-      - /<host_folder_data>:/data
-    restart: unless-stopped
-```
-
-## Support
-
-You can try to get support on the [Hotio discord](https://hotio.dev/discord), but you won't likely get support for this Docker image. 
-
-However, if you have problems configuring Wireguard, they may be able to assist you if you ask nicely.
-
-
-## Donate
-
-You can show your support by giving Hotio a star on Hotio's [Docker Hub](https://hub.docker.com/u/hotio) or/and [GitHub](https://github.com/hotio), it's also possible to make a [donation](https://hotio.dev/donate) to Hotio!
+You can show your support by giving us a star on Docker Hub or/and GitHub, it's also possible to make a [donation](https://hotio.dev/donate) to hotio.
