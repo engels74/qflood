@@ -1,6 +1,6 @@
 {
   "nightly": {
-    "description": "nightly",
+    "description": "Nightlies",
     "hide": false,
     "last_updated": "2024-02-15T13:27:41.000Z",
     "last_updated_url": "https://github.com/engels74/qflood/actions/runs/7916648359",
@@ -9,16 +9,6 @@
       "nightly",
       "nightly-4.6.3--7479881328",
       "nightly-11abe52"
-    ]
-  },
-  "release": {
-    "description": "Releases",
-    "last_updated": "2024-01-26T23:09:02.411Z",
-    "latest": true,
-    "tags": [
-      "release",
-      "release-0.9.8-r16--4.7.0",
-      "release-2058596"
     ]
   }
 }
