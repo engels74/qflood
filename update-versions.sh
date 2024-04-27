@@ -10,5 +10,5 @@ json=$(cat VERSION.json)
 jq --sort-keys \
     --arg version "${version//v/}" \
     --arg full_version "${full_version}" \
-    --arg flood_version "${flood_version}" \
+    --arg flood_version "${flood_version//v/}" \
     '.version = $version | .full_version = $full_version | .flood_version = $flood_version' <<< "${json}" | tee VERSION.json
