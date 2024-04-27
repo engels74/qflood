@@ -2,7 +2,7 @@
   "description": "nightly",
   "flood_version": "8838754261",
   "full_version": "release-4.6.4_v2.0.10",
-  "latest": true,
+  "latest": false,
   "test_amd64": true,
   "test_arm64": true,
   "test_url": "http://localhost:3000",
