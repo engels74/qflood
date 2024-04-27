@@ -1,6 +1,6 @@
 {
   "description": "Releases",
-  "flood_version": "v4.8.0",
+  "flood_version": "4.8.0",
   "full_version": "release-4.6.4_v2.0.10",
   "latest": true,
   "test_amd64": true,
