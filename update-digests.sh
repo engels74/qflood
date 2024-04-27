@@ -9,4 +9,3 @@ jq --sort-keys \
     --arg upstream_digest_amd64 "${upstream_digest_amd64}" \
     --arg upstream_digest_arm64 "${upstream_digest_arm64}" \
     '.upstream_digest_amd64 = $upstream_digest_amd64 | .upstream_digest_arm64 = $upstream_digest_arm64' <<< "${json}" | tee VERSION.json
-    

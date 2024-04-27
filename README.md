@@ -8,7 +8,7 @@ If you need some assistance, please join the hotio [discord](https://hotio.dev/d
 
 # Source
 
-The source is hosted at [GitHub](https://github.com/engels74/qflood/tree/nightly). If you can't find it in the `master` branch, it's probably located in another branch.
+The source is hosted at [GitHub](https://github.com/engels74/qflood/tree/release). If you can't find it in the `master` branch, it's probably located in another branch.
 
 # Show your support
 
