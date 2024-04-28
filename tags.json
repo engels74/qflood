@@ -1,4 +1,16 @@
 {
+  "nightly": {
+    "description": "nightly",
+    "hide": false,
+    "last_updated": "2024-04-28T22:35:18.000Z",
+    "last_updated_url": "https://github.com/engels74/qflood/actions/runs/8870869858",
+    "latest": false,
+    "tags": [
+      "nightly",
+      "nightly-4.6.4--8870820064",
+      "nightly-a4bc573"
+    ]
+  },
   "release": {
     "description": "Releases",
     "hide": false,
@@ -9,18 +21,6 @@
       "release",
       "release-release-4.6.4_2.0.10--4.8.0",
       "release-bf6b3cb"
-    ]
-  },
-  "nightly": {
-    "description": "Nightly",
-    "hide": false,
-    "last_updated": "2024-04-27T11:16:35.000Z",
-    "last_updated_url": "https://github.com/engels74/qflood/actions/runs/8859416392",
-    "latest": false,
-    "tags": [
-      "nightly",
-      "nightly-4.6.4--8838754261",
-      "nightly-1e9a5e7"
     ]
   }
 }
