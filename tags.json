@@ -2,13 +2,13 @@
   "nightly": {
     "description": "nightly",
     "hide": false,
-    "last_updated": "2024-06-07T14:49:52.000Z",
-    "last_updated_url": "https://github.com/engels74/qflood/actions/runs/9418917743",
+    "last_updated": "2024-06-07T16:10:39.000Z",
+    "last_updated_url": "https://github.com/engels74/qflood/actions/runs/9419955974",
     "latest": false,
     "tags": [
       "nightly",
       "nightly-4.6.5--9418807103",
-      "nightly-51b3a25"
+      "nightly-7cca0c3"
     ]
   },
   "release": {
