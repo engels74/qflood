@@ -1,7 +1,7 @@
 {
   "description": "nightly",
   "flood_version": "10482134479",
-  "full_version": "release-4.6.6_v2.0.10",
+  "full_version": "release-4.6.7_v2.0.10",
   "latest": false,
   "test_amd64": true,
   "test_arm64": true,
@@ -10,5 +10,5 @@
   "upstream_digest_arm64": "sha256:8e920165ede3b39aa9e4d1e613153d016d16b9ca57ee460d429f34fb4a805022",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "4.6.6--10482134479"
+  "version": "4.6.7--10482134479"
 }
