@@ -14,13 +14,13 @@
   "release": {
     "description": "Releases",
     "hide": false,
-    "last_updated": "2024-10-11T00:43:55.000Z",
-    "last_updated_url": "https://github.com/engels74/qflood/actions/runs/11284248523",
+    "last_updated": "2024-10-15T12:15:19.000Z",
+    "last_updated_url": "https://github.com/engels74/qflood/actions/runs/11345772283",
     "latest": true,
     "tags": [
       "release",
-      "release-release-5.0.0_2.0.10--4.8.4",
-      "release-54c9f7a"
+      "release-5.0.0_v2.0.10--4.8.4",
+      "release-c8ed8c2"
     ]
   }
 }
