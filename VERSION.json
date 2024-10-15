@@ -1,7 +1,7 @@
 {
   "description": "Releases",
   "flood_version": "4.8.4",
-  "full_version": "release-5.0.0_v2.0.10",
+  "full_version": "5.0.0_v2.0.10",
   "latest": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -10,5 +10,5 @@
   "upstream_digest_arm64": "sha256:2c8e36a85a549011469a41445f0416cc239d26b6e282b040f0e709226b833109",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "release-5.0.0_2.0.10--4.8.4"
+  "version": "5.0.0_2.0.10--4.8.4"
 }
