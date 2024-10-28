@@ -1,7 +1,7 @@
 {
   "description": "Releases",
   "flood_version": "4.8.4",
-  "full_version": "release-5.0.0_v2.0.10",
+  "full_version": "release-5.0.1_v2.0.10",
   "latest": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -10,5 +10,5 @@
   "upstream_digest_arm64": "sha256:f671e0485d1eb03bc12bf6dd1b9437d18985d62bd9eade97be8bf9144b11fb57",
   "upstream_image": "ghcr.io/engels74/base-image",
   "upstream_tag": "alpinevpn",
-  "version": "5.0.0_v2.0.10--4.8.4"
+  "version": "5.0.1_v2.0.10--4.8.4"
 }
