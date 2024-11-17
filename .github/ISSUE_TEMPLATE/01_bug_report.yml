@@ -1,0 +1,117 @@
+name: Bug Report
+description: "Found a bug? Please search through our open issues and documentation first to ensure this isn't already a known issue."
+labels: ["bug"]
+title: "Issue: "
+body:
+  - type: checkboxes
+    attributes:
+      label: "Pre-submission Checklist"
+      options:
+        - label: "I have searched [qflood issues](https://github.com/engels74/qflood/issues) and found no duplicates"
+          required: true
+        - label: "I have reviewed the [qflood Documentation](https://engels74.net/containers/qflood)"
+          required: true
+
+  - type: dropdown
+    id: "deployment"
+    attributes:
+      label: "Deployment Method"
+      description: "How are you running qflood?"
+      multiple: false
+      options:
+        - Docker (Recommended)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: "describe-the-bug"
+    attributes:
+      label: "Bug Description"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "Tell us what happened and what you expected to happen."
+    validations:
+      required: true
+
+  - type: textarea
+    id: "to-reproduce"
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Help us understand exactly how to trigger this bug."
+      placeholder: |
+        1. Configure qflood with '...'
+        2. Start the container or service '...'
+        3. See error '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: "docker-compose"
+    attributes:
+      label: "Docker Configuration"
+      description: |
+        For Docker users, please run this command:
+        ```bash
+        docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro ghcr.io/red5d/docker-autocompose CONTAINER_NAME
+        ```
+        Upload the output to https://logs.notifiarr.com and share the link.
+
+        ⚠️ IMPORTANT:
+        - Set the **Expires:** field on https://logs.notifiarr.com to `1 year` or `Never`, so the log doesn't expire too quickly.
+        - Remove any sensitive information (API keys, tokens, etc).
+      placeholder: "Paste the logs.notifiarr.com link for your docker-autocompose output"
+    validations:
+      required: false
+
+  - type: textarea
+    id: "logs"
+    attributes:
+      label: "Log Output"
+      description: |
+        Please provide relevant logs:
+        
+        1. Run `docker logs qflood` or check the logs in your Docker environment.
+        2. Upload logs to https://logs.notifiarr.com and share the link.
+        
+        ⚠️ IMPORTANT:
+        - Set the **Expires:** field on https://logs.notifiarr.com to `1 year` or `Never`, so the log doesn't expire too quickly.
+        - Remove any sensitive information (e.g., IP addresses, API keys).
+      placeholder: "Paste the logs.notifiarr.com link"
+    validations:
+      required: true
+
+  - type: textarea
+    id: "configuration"
+    attributes:
+      label: "Configuration"
+      description: |
+        Please provide your `qBittorrent.conf` file (with sensitive information removed):
+        - Remove sensitive information (e.g., passwords, API keys).
+      render: yaml
+    validations:
+      required: false
+
+  - type: textarea
+    id: "screenshots"
+    attributes:
+      label: "Screenshots"
+      description: "If applicable, add screenshots to help explain your problem."
+    validations:
+      required: false
+
+  - type: input
+    id: "version"
+    attributes:
+      label: "qflood Version"
+      description: "What version of qflood or the Docker image are you running?"
+      placeholder: "v0.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: "additional-context"
+    attributes:
+      label: "Additional Context"
+      description: "Add any other context about the problem here."
+    validations:
+      required: false
