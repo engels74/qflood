@@ -1,6 +1,6 @@
 {
   "description": "nightly",
-  "flood_version": "12888045863",
+  "flood_version": "13036161160",
   "full_version": "release-5.0.3_v2.0.11",
   "latest": false,
   "test_amd64": true,
@@ -10,5 +10,5 @@
   "upstream_digest_arm64": "sha256:6a42fbc32f1a6c1bd57ef6ce518f81a0389cc4ec9d556826b65440706a7ec49f",
   "upstream_image": "ghcr.io/engels74/base-image",
   "upstream_tag": "alpinevpn",
-  "version": "5.0.3--12888045863"
+  "version": "5.0.3--13036161160"
 }
