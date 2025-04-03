@@ -6,8 +6,8 @@
   "test_amd64": true,
   "test_arm64": true,
   "test_url": "http://localhost:3000",
-  "upstream_digest_amd64": "sha256:fa6bdf957c2c1d9710be07663e9f018dfbeb730faaa63754fed007ecb8ee05e3",
-  "upstream_digest_arm64": "sha256:5d6e8e2a2aecd7395899c307c2c8f7cdf6fc71c608958579d4ba66ec02155443",
+  "upstream_digest_amd64": "sha256:af9f704d715fbbdd8566922dbeb66c4292b2401e8d01efe9bd4142f3c57aa944",
+  "upstream_digest_arm64": "sha256:b835255e35fb7672fcf3aa0011d8a64269889fabbd89df0f381a08730a819401",
   "upstream_image": "ghcr.io/engels74/base-image",
   "upstream_tag": "alpinevpn",
   "version": "5.0.4--13626452227"
