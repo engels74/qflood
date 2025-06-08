@@ -1,6 +1,6 @@
 {
   "description": "Releases",
-  "flood_version": "4.9.3",
+  "flood_version": "4.9.5",
   "full_version": "release-5.1.0_v2.0.11",
   "latest": true,
   "test_amd64": true,
@@ -10,5 +10,5 @@
   "upstream_digest_arm64": "sha256:d32a607985ec77c4ae3b82544000557365fed8cb9354eb3aa75a061ff4d80c58",
   "upstream_image": "ghcr.io/engels74/base-image",
   "upstream_tag": "alpinevpn",
-  "version": "5.1.0_v2.0.11--4.9.3"
+  "version": "5.1.0_v2.0.11--4.9.5"
 }
