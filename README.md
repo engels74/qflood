@@ -37,6 +37,7 @@ To get started with qflood using Docker, follow these steps:
 	      - PGID=1000
 	      - UMASK=002
 	      - TZ=Etc/UTC
+		  - LIBTORRENT=v2
 	      - FLOOD_AUTH=true
 	      - ARGS
 	      - FLOOD_ARGS
