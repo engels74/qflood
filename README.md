@@ -1,7 +1,7 @@
 # qflood (qBittorrent + flood)
 
 <p align="center">
-  <img src="https://i.imgur.com/3f14EAL.png" alt="qflood" style="width: 25%;"/>
+  <img src="https://engels74.net/img/image-logos/qflood.svg" alt="base-image" style="width: 30%;"/>
 </p>
 
 <p align="center">
