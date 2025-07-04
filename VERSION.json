@@ -1,7 +1,10 @@
 {
+  "build_revision_lib1": "0",
+  "build_revision_lib2": "0",
   "description": "nightly",
   "flood_version": "15524644780",
-  "full_version": "release-5.1.2_v2.0.11",
+  "full_version_lib1": "release-5.1.2_v1.2.20",
+  "full_version_lib2": "release-5.1.2_v2.0.11",
   "latest": false,
   "test_amd64": true,
   "test_arm64": true,
