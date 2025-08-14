@@ -1,6 +1,6 @@
 {
-  "build_revision_lib1": "1",
-  "build_revision_lib2": "1",
+  "build_revision_lib1": "2",
+  "build_revision_lib2": "0",
   "description": "Releases",
   "flood_version": "4.9.5",
   "full_version_lib1": "release-5.1.2_v1.2.20",
