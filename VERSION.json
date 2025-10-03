@@ -2,7 +2,7 @@
   "build_revision_lib1": "8",
   "build_revision_lib2": "8",
   "description": "nightly",
-  "flood_version": "18228712245",
+  "flood_version": "18228810595",
   "full_version_lib1": "release-5.1.2_v1.2.20",
   "full_version_lib2": "release-5.1.2_v2.0.11",
   "latest": false,
@@ -13,5 +13,5 @@
   "upstream_digest_arm64": "sha256:8b6a4063c078d398af29c92e985ec28cb2fb8ba249f4b046e2694c0086688dcd",
   "upstream_image": "ghcr.io/engels74/base-image",
   "upstream_tag": "alpinevpn",
-  "version": "5.1.2--18228712245"
+  "version": "5.1.2--18228810595"
 }
