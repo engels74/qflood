@@ -23,7 +23,7 @@ ARG FLOOD_VERSION
 RUN curl -fsSL "https://nightly.link/jesec/flood/actions/runs/${FLOOD_VERSION}/flood-linux-arm64.zip" > flood.zip && \
     unzip -q flood.zip -d "${APP_DIR}/" && \
     rm -f flood.zip && \
-    mv ${APP_DIR}/flood-linux-x64 ${APP_DIR}/flood && \
+    mv ${APP_DIR}/flood-linux-arm64 ${APP_DIR}/flood && \
     chmod 755 "${APP_DIR}/flood"
 
 COPY root/ /
