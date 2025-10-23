@@ -18,7 +18,7 @@ RUN curl -fsSL "https://github.com/userdocs/qbittorrent-nox-static/releases/down
     chmod 755 "${APP_DIR}/qbittorrent-nox-lib2"
 
 ARG FLOOD_VERSION
-RUN curl -fsSL "https://github.com/jesec/flood/releases/download/v${FLOOD_VERSION}/flood-linux-x64" > "${APP_DIR}/flood" && \
+RUN curl -fsSL "https://github.com/jesec/flood/releases/download/v${FLOOD_VERSION}/flood-linux-arm64" > "${APP_DIR}/flood" && \
     chmod 755 "${APP_DIR}/flood"
 
 COPY root/ /
