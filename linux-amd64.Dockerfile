@@ -27,3 +27,4 @@ RUN curl -fsSL "https://nightly.link/jesec/flood/actions/runs/${FLOOD_VERSION}/f
     chmod 755 "${APP_DIR}/flood"
 
 COPY root/ /
+RUN find /etc/s6-overlay/s6-rc.d -name "run*" -execdir chmod +x {} +
