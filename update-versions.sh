@@ -11,8 +11,8 @@ full_version_lib2=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://git
 build_revision_lib2=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://github.com/userdocs/qbittorrent-nox-static/releases/download/${full_version_lib2}/dependency-version.json" | jq -re '.revision')
 version=$(sed -e "s/release-//g" -e "s/_.*//g" <<< "${full_version_lib2}")
 
-# Update VERSION.json using jq
-json=$(cat VERSION.json)
+# Update meta.json using jq
+json=$(cat meta.json)
 jq --sort-keys \
     --arg version "${version}--${flood_version//v/}" \
     --arg full_version_lib1 "${full_version_lib1}" \
@@ -20,4 +20,4 @@ jq --sort-keys \
     --arg full_version_lib2 "${full_version_lib2}" \
     --arg build_revision_lib2 "${build_revision_lib2}" \
     --arg flood_version "${flood_version//v/}" \
-    '.version = $version | .full_version_lib1 = $full_version_lib1 | .build_revision_lib1 = $build_revision_lib1 | .full_version_lib2 = $full_version_lib2 | .build_revision_lib2 = $build_revision_lib2 | .flood_version = $flood_version' <<< "${json}" | tee VERSION.json
+    '.version = $version | .full_version_lib1 = $full_version_lib1 | .build_revision_lib1 = $build_revision_lib1 | .full_version_lib2 = $full_version_lib2 | .build_revision_lib2 = $build_revision_lib2 | .flood_version = $flood_version' <<< "${json}" | tee meta.json
