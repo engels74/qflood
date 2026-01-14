@@ -4,7 +4,7 @@ ARG UPSTREAM_TAG_SHA
 FROM ${UPSTREAM_IMAGE}:${UPSTREAM_TAG_SHA}
 EXPOSE 3000 8080
 ARG IMAGE_STATS
-ENV IMAGE_STATS=${IMAGE_STATS} FLOOD_AUTH="false" WEBUI_PORTS="8080/tcp,8080/udp,3000/tcp,3000/udp" LIBTORRENT="v2"
+ENV IMAGE_STATS=${IMAGE_STATS} FLOOD_AUTH="false" WEBUI_PORTS="8080/tcp,3000/tcp" LIBTORRENT="v2"
 
 RUN ln -s "${CONFIG_DIR}" "${APP_DIR}/qBittorrent"
 
@@ -17,8 +17,8 @@ RUN curl -fsSL "https://github.com/userdocs/qbittorrent-nox-static/releases/down
     curl -fsSL "https://github.com/userdocs/qbittorrent-nox-static/releases/download/${FULL_VERSION_LIB2}/x86_64-qbittorrent-nox" > "${APP_DIR}/qbittorrent-nox-lib2" && \
     chmod 755 "${APP_DIR}/qbittorrent-nox-lib2"
 
-ARG FLOOD_VERSION
-RUN curl -fsSL "https://github.com/jesec/flood/releases/download/v${FLOOD_VERSION}/flood-linux-x64" > "${APP_DIR}/flood" && \
+ARG VERSION_FLOOD
+RUN curl -fsSL "https://github.com/jesec/flood/releases/download/v${VERSION_FLOOD}/flood-linux-x64" > "${APP_DIR}/flood" && \
     chmod 755 "${APP_DIR}/flood"
 
 COPY root/ /
