@@ -20,8 +20,8 @@ RUN curl -fsSL "https://github.com/userdocs/qbittorrent-nox-static/releases/down
     chmod 755 "${APP_DIR}/qbittorrent-nox-lib2"
 
 ARG VERSION_FLOOD
-RUN curl -fsSL "https://nightly.link/jesec/flood/actions/runs/${VERSION_FLOOD}/flood-linux-arm64.zip" > flood.zip && \
-    unzip -q flood.zip -d "${APP_DIR}/" && \
+RUN curl -fsSL "https://nightly.link/jesec/flood/actions/runs/${VERSION_FLOOD}/pkg-binaries.zip" > flood.zip && \
+    unzip -qo flood.zip flood-linux-arm64 -d "${APP_DIR}/" && \
     rm -f flood.zip && \
     mv ${APP_DIR}/flood-linux-arm64 ${APP_DIR}/flood && \
     chmod 755 "${APP_DIR}/flood"
