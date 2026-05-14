@@ -1,0 +1,11 @@
+name: call-update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  call:
+    uses: engels74/base-image/.github/workflows/update-on-call.yml@workflows
+    secrets: inherit
