@@ -7,7 +7,7 @@
   "test_url": "http://localhost:3000",
   "upstream_image": "ghcr.io/engels74/base-image",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-c5c3e9c",
+  "upstream_tag_sha": "alpinevpn-826feea",
   "upstream_tag_sha__command": "json=$(cat meta.json) && upstream_image=$(jq -re '.upstream_image' <<< \"${json}\") && upstream_image_base=$(basename \"${upstream_image}\") && upstream_tag=$(jq -re '.upstream_tag' <<< \"${json}\") && tags_json=$(curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://engels74.net/containers/${upstream_image_base}-tags.json\") && commit_sha=$(jq -r --arg tag \"${upstream_tag}\" '.[$tag].commit_sha' <<< \"${tags_json}\") && upstream_tag_sha=${upstream_tag}-${commit_sha:0:7} && echo \"${upstream_tag_sha}\"",
   "version": "5.2.3--4.16.1",
   "version__command": "if ! test -f cache-page1.json; then curl -fsSL \"https://github.com/userdocs/qbittorrent-nox-static/releases/latest/download/dependency-version.json\" > cache-page1.json; fi && version_qb=$(cat cache-page1.json | jq -re '. | \"release-\\(.qbittorrent)_v\\(.libtorrent_2_0)\"' | sed -e \"s/release-//g\" -e \"s/_.*//g\") && version_flood=$(curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://api.github.com/repos/jesec/flood/releases/latest\" | jq -re '.tag_name' | sed -E 's/^v//') && echo \"${version_qb}--${version_flood}\"",
